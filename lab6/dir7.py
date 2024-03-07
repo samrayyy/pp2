@@ -4,4 +4,5 @@ def copy_file(source_file, destination_file):
             with open(destination_file, 'w') as destination:
                 destination.write(source.read())
         print("Contents copied successfully from", source_file, "to", destination_file)
-
+    except FileNotFoundError:
+        print("One of the files does not exist")

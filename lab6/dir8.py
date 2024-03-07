@@ -11,4 +11,5 @@ def delete_file(path):
 
     try:
         os.remove(path)
-
+    except Exception as e:
+        print("Error")
