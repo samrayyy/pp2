@@ -14,3 +14,5 @@ def main():
         print("Numbers divisible by3 and 4 between 0 and", n, ":")
         for number in divisible_numbers:
             print(number)
+    except ValueError:
+        print("error")

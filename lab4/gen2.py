@@ -12,4 +12,5 @@ def main():
         even_numbers = even_generator(n)
         print("Even numbers between 0 and", n, ":", end=" ")
         print(*even_numbers, sep=", ")
-
+    except ValueError:
+        print("error")
