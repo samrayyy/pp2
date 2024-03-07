@@ -7,7 +7,7 @@ def main():
     try:
         n = int(input())
         if n < 0:
-            return #negative
+            return 
 
         even_numbers = even_generator(n)
         print("Even numbers between 0 and", n, ":", end=" ")
